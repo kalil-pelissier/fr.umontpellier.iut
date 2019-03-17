@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Hanoi implements JeuPuzzle {
+public class Hanoi implements JeuPuzzle{
     private ArrayList<Integer>[] colonnes;
     private int taille;
 
@@ -46,6 +46,10 @@ public class Hanoi implements JeuPuzzle {
             }
         }
         this.taille = h.taille;
+    }
+
+    public boolean estGagnant() {
+        return (colonnes[0].isEmpty() && colonnes[1].isEmpty());
     }
     
     @Override

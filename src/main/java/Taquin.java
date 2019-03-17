@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Taquin implements JeuPuzzle {
+public class Taquin implements JeuPuzzle{
 
     private int[][] configuration;
 
